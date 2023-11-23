@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	
 }
 
 /*  DESIGN FOR SMALL SCREEN */
@@ -115,12 +116,13 @@ nav a:focus {
 	transition: all 0.2s;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 200px) {
 	/*  DESIGN FOR LARGE SCREEN */
 	body {
 		background: url('../images/img.jpg') no-repeat;
 		background-size: cover;
 		background-position: center;
+		width: 100%;
 	}
 	.header_n {
 		display: flex;
