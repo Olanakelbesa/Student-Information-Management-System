@@ -1,0 +1,132 @@
+*{
+    margin:0px;
+    padding:0px;
+
+}
+.all_container{
+    display:flex;
+    background:whitesmoke;
+    gap:20px;
+}
+
+/* main part*/
+.main_container{
+    width:80%;
+}
+.main_container .top{
+    font-size: 20px;
+    width:100%;
+    margin:20px 0px 0px 0px;
+    height:5vh;
+    display:flex;
+    gap:60%;
+}
+.main_container .top i{
+      padding: 10px;
+    border-radius: 50%;
+    background:gray;
+}
+.container{
+    margin:15px  0px 0px 5%;
+    max-width: 850px;
+    width: 80%;
+    height:80vh;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.result-details{
+    display:flex;
+    justify-content: space-around;
+
+}
+.result-details input{
+    margin-bottom: 15px;
+    height: 40px;
+    width: 30%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+}
+.input-box input{
+    margin-bottom: 15px;
+    height: 40px;
+    width: 30%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+}
+.input-box select {
+    margin-bottom: 15px;
+    height: 40px;
+    width: 30%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+}
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+form .button{
+    height: 45px;
+    margin: 30px 0 0;
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+form .button input:hover{
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+@media only screen and (max-width: 600px){
+    .all_container{
+        gap:2px;
+    }
+    .main_container .top{
+        gap:calc(100%/3-50px);
+         font-size: 10px;
+    }
+    .container{
+        width:90%;
+        margin:0;
+        padding: 15px;
+    }
+    .result-details{
+        flex-direction: column;
+    }
+    .result-details input{
+        margin-bottom: 5px;
+        height: 30px;
+        font-size: 10px;
+      
+    }
+    .input-box input{
+        margin-bottom: 5px;
+        height: 30px;
+        font-size: 10px;
+       
+    }
+    .input-box select {
+        margin-bottom: 5px;
+        height: 30px;
+        font-size: 10px;
+    }
+       
+       
+}

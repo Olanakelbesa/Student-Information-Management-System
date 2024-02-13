@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/profile.css">
+    <link rel="stylesheet" href="./css/navLink.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+	<link rel="icon" href="../images/favicon.ico">
+    <title>Dashboard / Profile</title>
+</head>
+
+<body>
+    <main class="all_container">
+        <aside class="side_nav">
+            <div class="logo">
+                <i class="fas fa-bars" onclick="togleSide()"></i> 
+                gelan Gura
+            </div>
+            <div class="nav_part">
+                <ul>
+                    <li><a href="dashboard.html">
+                        <i class="fas fa-qrcode"></i>
+                            <span class="nav-item"> Dashboard</span>
+                        </a></li>
+                    
+                        <p>Mannage School</p>
+                  
+                    <li><a href="addStudent.html">
+                        <i class="fas fa-user-cog"></i>
+                            <span class="nav-item">Add student</span>
+                        </a> </li>
+                        <li><a href="#">
+                            <i class="fas fa-calendar"></i>
+                            <span class="nav-item"> Schedule</span>
+                        </a></li>
+                    <li><a href="addGrade.html">
+                            <i class="fas fa-print"></i>
+                            <span class="nav-item"> Grade</span></a></li><hr>
+                  
+                         <p>profile</p>
+                     
+                     <li  class="active"><a href="profile.html">
+                        <i class="fas fa-id-card"></i>
+                        <span class="nav-item"> Profile</span>
+                    </a></li>
+                    <li><a href="dashboard.html">
+                            <i class="fas fa-book"></i>
+                            <span class="nav-item">Feedback</span>
+                        </a></li>
+                    <li><a href="../homepage/home.html" class="logout">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span class="nav-item"> Logout</span>
+                        </a></li>
+                </ul>
+            </div>
+          <div class="n_box">
+             <div class="n_box1"> </div>
+             <div class="n_box2"> </div>
+          </div>
+          
+        </aside>
+    
+        <div class="smlside_nav">
+            <div class="smllogo">
+                <i class="fas fa-bars" onclick="togleSide()"></i> 
+            </div>
+            <ul>
+                <li ><a href="dashboard.html">
+                    <i class="fas fa-home"></i> 
+                    </a></li>
+            
+                <li><a href="addStudent.html">
+                    <i class="fas fa-user-cog"></i>
+                    </a> </li>
+                    <li><a href="#">
+                        <i class="fas fa-calendar"></i>
+                    </a></li>
+                <li><a href="addGrade.html">
+                        <i class="fas fa-print"></i>
+                        </a></li><hr>
+               
+                 <li  class="active"><a href="profile.html">
+                    <i class="fas fa-id-card"></i>
+                </a></li>
+                <li><a href="dashboard.html">
+                        <i class="fas fa-book"></i>
+                    </a></li>
+                <li><a href="../homepage/home.html" class="logout">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </a></li>
+            </ul>
+        </div>
+        <section class="main_container">
+            <div class="top">
+                <h1>Gelan Gura High school</h1>
+          </div>
+             <div class="main">
+                    <div class="boxs1">
+                            <div class="box">
+                            <img src="./image/school.avif" alt="profile"><hr>
+                            <p class="nav-item">JOHN DOE</p>
+                            <p class="nav-item">ST@GG/1266</p>
+                      </div>
+                      <div class="box1">
+                        <div><i class="far fa-clone pr-1"></i>General Information</div>
+                       <table border="1">
+                          <tr><td>Education Level</td><td>BSC on computer science</td></tr>
+                          <tr><td>Experience </td><td>10 years on teaching</td></tr>
+                          <tr><td>Current status</td><td>Teacher at Gelan Gura</td></tr>
+                          <tr><td>Email </td><td>johndoe1266@gmail.com</td></tr>
+                          <tr><td>Gender</td><td> Male</td></tr>
+                       </table>
+                     </div>
+                </div>
+                <div class="boxs2">
+                    <div><i class="far fa-clone pr-1"></i>More Information</div>
+                    <div class="detail">
+                        I hold a Bachelor of Science degree in Computer Science and bring over ten years of
+                         teaching experience to my current role as an educator at Gelan Gura. My dedication
+                          to education is fueled by a passion for fostering an engaging and supportive learning
+                           environment for my students. You can reach out to me via email at johndoe1266@gmail.com.
+                        </div>    
+                </div>  
+            </div>
+        </section>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>

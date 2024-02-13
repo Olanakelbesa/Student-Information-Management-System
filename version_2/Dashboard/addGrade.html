@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/addGrade.css">
+    <link rel="stylesheet" href="./css/navLink.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+	<link rel="icon" href="../images/favicon.ico">
+    <title>Dashboard / addGrade</title>
+</head>
+
+<body>
+    <main class="all_container">
+       
+        <aside class="side_nav">
+            <div class="logo">
+                <i class="fas fa-bars" onclick="togleSide()"></i> 
+                gelan Gura
+            </div>
+            <div class="nav_part">
+                <ul>
+                    <li ><a href="dashboard.html">
+                        <i class="fas fa-qrcode"></i>
+                            <span class="nav-item"> Dashboard</span>
+                        </a></li>
+                    
+                        <p>Mannage School</p>
+                    
+                    <li><a href="addStudent.html">
+                        <i class="fas fa-user-cog"></i>
+                            <span class="nav-item">Add student</span>
+                        </a> </li>
+                        <li><a href="#">
+                            <i class="fas fa-calendar"></i>
+                            <span class="nav-item"> Schedule</span>
+                        </a></li>
+                    <li class="active"><a href="addGrade.html">
+                            <i class="fas fa-print"></i>
+                            <span class="nav-item"> Grade</span></a></li><hr>
+                    
+                         <p>profile</p>
+                     
+                     <li><a href="profile.html">
+                        <i class="fas fa-id-card"></i>
+                        <span class="nav-item"> Profile</span>
+                    </a></li>
+                    <li><a href="dashboard.html">
+                            <i class="fas fa-book"></i>
+                            <span class="nav-item">Feedback</span>
+                        </a></li>
+                    <li><a href="../homepage/home.html" class="logout">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span class="nav-item"> Logout</span>
+                        </a></li>
+                </ul>
+            </div>
+          <div class="n_box">
+             <div class="n_box1"> </div>
+             <div class="n_box2"> </div>
+          </div>
+          
+        </aside>
+    
+        <div class="smlside_nav">
+            <div class="smllogo">
+                <i class="fas fa-bars" onclick="togleSide()"></i> 
+            </div>
+            <ul>
+                <li ><a href="dashboard.html">
+                    <i class="fas fa-home"></i> 
+                    </a></li>
+            
+                <li><a href="addStudent.html">
+                    <i class="fas fa-user-cog"></i>
+                    </a> </li>
+                    <li><a href="#">
+                        <i class="fas fa-calendar"></i>
+                    </a></li>
+                <li class="active"><a href="addGrade.html">
+                        <i class="fas fa-print"></i>
+                        </a></li><hr>
+               
+                 <li><a href="profile.html">
+                    <i class="fas fa-id-card"></i>
+                </a></li>
+                <li><a href="dashboard.html">
+                        <i class="fas fa-book"></i>
+                    </a></li>
+                <li><a href="../homepage/home.html" class="logout">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </a></li>
+            </ul>
+        </div>
+        <section class="main_container">
+            <div class="top">
+                <h1>Gelan Gura High school</h1>
+          </div>
+            <div class="container">
+                <form>
+                    <div class="user-details">
+                        <div class="input-box">
+                            <lebel class="details">Academic year:</lebel>
+                            <input type="month"  required>
+                        </div>
+    
+                        <div class="input-box">
+                            <lebel class="details">Grade and Section:</lebel>
+                            <select name="Section"  >
+                                <option value="9th">9th</option>
+                                <option value="10th">10th</option>
+                                <option value="11th">11th</option>
+                                <option value="12th">12th</option>
+                            </select>
+                            <input type="text" placeholder="A">
+                        </div>
+                        <div class="input-box">
+                            <lebel class="details">subject:</lebel>
+                            <select name="subject">
+                                <option value="name">Biology</option>
+                                <option value="name">Mathmathics</option>
+                                <option value="name">English</option>
+                                <option value="name">Amharic</option>
+                                <option value="name" >Physics</option>
+                                <option value="name">Chemistry</option>
+                                <option value="name">Geography</option>
+                                <option value="name">History</option>
+                            </select>
+                        </div>
+                        <div class="input-box">
+                            <lebel >Name of student:</lebel>
+                        <select name="NameOfStudents">
+                            <option value="name">Abdulaziz Jemal</option>
+                            <option value="name">Natnael Necho</option>
+                            <option value="name">Natnael shiferaw</option>
+                            <option value="name">Olana Kelbesa</option>
+                            <option value="name">Olman Gemechu</option>
+                        </select>
+                        </div>   
+                       
+                    </div>
+                    <div class="result-details">
+                        <label>Assesment: <input type="number" value="43"></label> 
+                         <label>Final: <input type="number" value="42"></label>
+                        <label >Total:<input type="number" value="85"></label>
+                    </div>
+                    <div class="button">
+                           <input type="submit" value="Save result">
+                    </div> 
+                    </form>	
+            </div>
+            </section>
+         </main>
+         <script src="./js/script.js"></script>
+    </body>
+</html>

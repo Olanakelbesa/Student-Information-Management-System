@@ -1,0 +1,206 @@
+body{
+    background-color: whitesmoke;
+    color: rgb(27, 25, 25);
+    margin: 0;
+    display:flex;
+    font-family: 'Inter', sans-serif;
+  }
+  *{
+    box-sizing: border-box;
+    position: relative;
+    top:0;
+    left:0;
+  }
+  .showAdd {
+    margin-top: 20px;
+    height:40px;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #2d2e2f, #9b59b6);
+  }
+
+  /*top part*/
+
+
+/*table part*/
+.table{
+  border: 1px solid rgb(27, 26, 26);
+  width:100%;
+  border-spacing: 0;
+  min-height: 200px;
+  overflow-x: auto;
+}
+th,td{
+  text-align: center;
+}
+th{
+  border-bottom: 1px solid rgb(37, 34, 34);
+  border-right: 1px solid rgb(48, 45, 45);
+  padding: 10px;
+}
+td{
+  padding: 10px;
+  border-right: 1px solid rgb(40, 39, 39);
+}
+thead{
+  background-color: #71b7e6;
+}
+
+tbody{
+  height: auto;
+}
+.search{
+  width:100%;
+  background-color: rgb(224, 216, 216);
+  border: 1px solid rgb(46, 43, 43);
+  height: 40px;
+  padding: 0;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  width:100%;
+  padding-left: 10px;
+  color: rgb(19, 18, 18);
+  outline: none;
+  border-radius: 10px;
+}
+.search input{
+  background-color: rgb(224, 216, 216);
+  width: 75%;
+  height: 38px;
+  border: none;;
+  outline:none;
+}
+.button {
+  height: 40px;
+  width: 400px;
+  margin: 20px;
+  margin-left: 0;
+  margin-top: 30px;
+  display: flex;
+  gap:20px;
+}
+
+/*addstudent part*/
+
+  .addConainer{
+    position: fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    backdrop-filter: blur(24px);
+    display: none;
+    z-index: 10;
+  }
+  form{
+    background-color: #c2bfc3;
+    margin: auto;
+    padding:10px;
+    border-radius:10px;
+    width:50%;
+  }
+  .container{
+    margin: 20px 50px;
+    width:90%;
+  }
+  .degree{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+  }
+  .icons{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap:10px
+  }
+
+  .container form .user-details{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: auto;
+    justify-content: space-around;
+    margin: 20px 0 12px 0;
+  }
+  form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100%);
+  }
+  .user-details .input-box input{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+  }
+  .user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .user-details .input-box input:focus,
+  .user-details .input-box input:valid{
+    border-color: #9b59b6;
+  }
+  .gender-details{
+    width: 100%;
+  }
+  form .button{
+    height: 45px;
+    margin: 30px 0 0;
+  }
+  form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  }
+  form .button input:hover{
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  }
+  #myfile{
+    padding-top: 10px;
+  } 
+  @media screen and (max-width: 800px) {
+    
+    .container{
+      width:80%;
+    }
+      .table {
+        overflow-x: auto;
+        display: block;
+        width: 100%;
+      }
+      th, td {
+        padding: 8px;
+      }
+    .container {
+      margin: 20px 20px; 
+    }
+  
+    form {
+      width: 90%;
+    }
+  
+    .button {
+      width: 90%; 
+    }
+  
+    .user-details {
+      grid-template-columns: 100%;
+    }
+  }

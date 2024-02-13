@@ -1,0 +1,118 @@
+
+.side_nav {
+  position: sticky;
+  top: 0; 
+  width: 18%;
+  color: white;
+  background: hsl(230, 50%, 30%);
+  display: none;
+  height: 100vh;
+  padding: 1% 0;
+}
+.side_nav .logo{
+  font-size: 25px;
+  margin: 10px 0 10px 10px;
+}
+.side_nav .nav_part ul{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+}
+.side_nav .nav_part ul li{ 
+  padding:10px 0;
+  margin:10px 0;
+  display: block; 
+}
+.side_nav .nav_part ul .active{ 
+  background: hsl(230, 50%, 20%);
+  border-radius: 0 20px 20px 0;
+}
+.side_nav .nav_part p{
+  text-align: center;
+}
+.side_nav .nav_part ul li a{
+  text-decoration: none;
+  margin-left:15px;
+  color:white;
+}
+.side_nav .nav_part ul li:hover{
+  background: hsl(230, 50%, 40%);
+  border-radius: 0 20px 20px 0;
+}
+.smlside_nav{
+  position: sticky;
+  top:0;
+  width:5%;
+  background: hsl(230, 50%, 30%);
+  height:100vh;
+  padding: 1% 0;
+  color:white;
+  display:block;
+}
+.smlside_nav .smllogo{
+  font-size: 25px;
+  margin: 10px 0 10px 10px;
+}
+.smlside_nav ul{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+}
+.smlside_nav ul li{ 
+  padding:10px 0;
+  margin:10px 0;
+  display: block; 
+}
+.smlside_nav ul .active{ 
+  background: hsl(230, 50%, 20%);
+  border-radius: 10px ;
+}
+.smlside_nav  ul li a{
+  text-decoration: none;
+  margin-left:15px;
+  color:white;
+}
+.smlside_nav ul li:hover{
+  background: hsl(230, 50%, 40%);
+  border-radius: 10px ;
+}
+.menu,.sml_menu{
+  display:none;
+}
+  /* Media query for screens up to 800px */
+  @media screen and (max-width: 800px) {
+    .smlside_nav{
+      position: sticky;
+      width:10%;
+      display:block;
+    }
+    .top{
+      width:100%;
+      top:0;
+      left:0;
+      z-index: 3;
+    }
+    .top h1{
+      font-size:30px ;
+      text-align: center;
+    }
+    .smllogo, .logo {
+      font-size: 20px;
+    }
+    .smlside_nav li a {
+      padding: 15%; 
+    }
+    .side_nav li a {
+      padding: 3%; 
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .smlside_nav{
+      margin: 0px;
+      width:15%;
+    }
+    .top h1{
+      font-size:20px ;
+      text-align: center;
+    }
+  }

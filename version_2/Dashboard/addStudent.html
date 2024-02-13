@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/addStudent.css">
+    <link rel="stylesheet" href="./css/navLink.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+	<link rel="icon" href="../images/favicon.ico">
+    <title>Dashboard / addStudent</title>
+</head>
+
+<body>
+    <aside class="side_nav">
+        <div class="logo">
+            <i class="fas fa-bars" onclick="togleSide()"></i> 
+            gelan Gura
+        </div>
+        <div class="nav_part">
+            <ul>
+                <li ><a href="dashboard.html">
+                    <i class="fas fa-home"></i>
+                        <span class="nav-item"> Dashboard</span>
+                    </a></li>
+                
+                    <p>Mannage School</p>
+               
+                <li class="active"><a href="addStudent.html">
+                    <i class="fas fa-user-cog"></i>
+                        <span class="nav-item">Add student</span>
+                    </a> </li>
+                    <li><a href="#">
+                        <i class="fas fa-calendar"></i>
+                        <span class="nav-item"> Schedule</span>
+                    </a></li>
+                <li><a href="addGrade.html">
+                        <i class="fas fa-print"></i>
+                        <span class="nav-item"> Grade</span></a></li><hr>
+                
+                     <p>profile</p>
+                 
+                 <li><a href="profile.html">
+                    <i class="fas fa-id-card"></i>
+                    <span class="nav-item"> Profile</span>
+                </a></li>
+                <li><a href="dashboard.html">
+                        <i class="fas fa-book"></i>
+                        <span class="nav-item">Feedback</span>
+                    </a></li>
+                <li><a href="../homepage/home.html" class="logout">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span class="nav-item"> Logout</span>
+                    </a></li>
+            </ul>
+        </div>
+      <div class="n_box">
+         <div class="n_box1"> </div>
+         <div class="n_box2"> </div>
+      </div>
+      
+    </aside>
+
+    <div class="smlside_nav">
+        <div class="smllogo">
+            <i class="fas fa-bars" onclick="togleSide()"></i> 
+        </div>
+        <ul>
+            <li><a href="dashboard.html">
+                <i class="fas fa-home"></i> 
+                </a></li>
+        
+            <li class="active"><a href="addStudent.html">
+                <i class="fas fa-user-cog"></i>
+                </a> </li>
+                <li><a href="#">
+                    <i class="fas fa-calendar"></i>
+                </a></li>
+            <li><a href="addGrade.html">
+                    <i class="fas fa-print"></i>
+                    </a></li><hr>
+          
+             <li><a href="profile.html">
+                <i class="fas fa-id-card"></i>
+            </a></li>
+            <li><a href="dashboard.html">
+                    <i class="fas fa-book"></i>
+                </a></li>
+            <li><a href="../homepage/home.html" class="logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                </a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="top">
+              <h1>Gelan Gura High school</h1>
+        </div>
+        
+    <div class="body">
+        <div class="search"><i class="fa fa-search"></i>
+            <input type="text" id="search" onkeyup="search()" placeholder="Search By Id, Name"></div>
+
+            <table class="table" id="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Student Name</th>
+                        <th>Email</th>
+                        <th>Age</th>
+                        <th>Phone</th>
+                        <th>Address</th><th>Edit</th><th>delete</th>
+                    </tr>
+                </thead>
+        
+                <tbody id="tbody">
+                </tbody>
+            </table>
+            <button  class="showAdd" onclick="showAdd()">ADD student</button>
+    </div>
+        <div class="addConainer">
+              <form action="#">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">First Name</span>
+                            <input  id="fname" type="text" placeholder="Fist name" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Last Name</span>
+                            <input  id="lname" type="text" placeholder="Last name" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">age</span>
+                            <input  id="Age" type="number" placeholder="age" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Email</span>
+                            <input  id="Email" type="email" placeholder="Email" required>
+                        </div>
+                        
+                        <div class="input-box">
+                            <span class="details">Phone Number</span>
+                            <input  id="phone" type="tel" placeholder="Phone number" required>
+                        </div>
+                        <div class="input-box">
+                            <address>
+                                <span class="details">Address</span>
+                                <input  id="address" type="text" placeholder="Address" required>
+                            </address>
+                        </div>
+    
+                        <div class="gender-details">
+                            
+                            <div class="button">
+                                <input type="submit" id="submit" value="Register" onclick="addStudent()">
+                                <input type="reset" value="cancel" onclick="closeAdd()">
+                            </div>
+                        </div>
+                    </div>
+                </form> 
+           </div>
+    </div>
+        
+    <script src="./js/script.js"></script>
+</body>
+</html>

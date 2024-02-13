@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <link rel="stylesheet" href="./css/navLink.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+	<link rel="icon" href="../images/favicon.ico">
+    <title>Dashboard </title>
+</head>
+
+<body>
+    <main class="all_container">
+        <aside class="side_nav">
+            <div class="logo">
+                <i class="fas fa-bars" onclick="togleSide()"></i> 
+                gelan Gura
+            </div>
+            <div class="nav_part">
+                <ul>
+                    <li class="active"><a href="dashboard.html">
+                        <i class="fas fa-qrcode"></i>
+                            <span class="nav-item"> Dashboard</span>
+                        </a></li>
+                  
+                        <p>Mannage School</p>
+                   
+                    <li><a href="addStudent.html">
+                        <i class="fas fa-user-cog"></i>
+                            <span class="nav-item">Add student</span>
+                        </a> </li>
+                        <li><a href="#">
+                            <i class="fas fa-calendar"></i>
+                            <span class="nav-item"> Schedule</span>
+                        </a></li>
+                    <li><a href="addGrade.html">
+                            <i class="fas fa-print"></i>
+                            <span class="nav-item"> Grade</span></a></li><hr>
+                    
+                         <p>profile</p>
+                     
+                     <li><a href="profile.html">
+                        <i class="fas fa-id-card"></i>
+                        <span class="nav-item"> Profile</span>
+                    </a></li>
+                    <li><a href="#">
+                            <i class="fas fa-book"></i>
+                            <span class="nav-item">Feedback</span>
+                        </a></li>
+                    <li><a href="../homepage/home.html" class="logout">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span class="nav-item"> Logout</span>
+                        </a></li>
+                </ul>
+            </div>
+          <div class="n_box">
+             <div class="n_box1"> </div>
+             <div class="n_box2"> </div>
+          </div>
+          
+        </aside>
+    
+        <div class="smlside_nav">
+            <div class="smllogo">
+                <i class="fas fa-bars" onclick="togleSide()"></i> 
+            </div>
+            <ul>
+                <li class="active"><a href="dashboard.html">
+                    <i class="fas fa-home"></i> 
+                    </a></li>
+            
+                <li><a href="addStudent.html">
+                    <i class="fas fa-user-cog"></i>
+                    </a> </li>
+                    <li><a href="#">
+                        <i class="fas fa-calendar"></i>
+                    </a></li>
+                <li><a href="addGrade.html">
+                        <i class="fas fa-print"></i>
+                        </a></li><hr>
+
+                 <li><a href="profile.html">
+                    <i class="fas fa-id-card"></i>
+                </a></li>
+                <li><a href="#">
+                        <i class="fas fa-book"></i>
+                    </a></li>
+                <li><a href="../homepage/home.html" class="logout">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </a></li>
+            </ul>
+        </div>
+        <section class="main_container">
+            <div class="top">
+                <h1>Gelan Gura High school</h1>
+          </div>
+            <div class="main">
+                <div class="boxs1">
+                    <div class="box">
+                 <i class="fas fa-user-cog"></i>
+                    <a href="./addStudent.html">
+                        <span class="nav-item">Add student</span>
+                    </a>
+                   </div>
+                <div class="box">
+                    <i class="fas fa-id-card"></i>
+                        <a href="./profile.html">
+                            <span class="nav-item"> Profile</span>
+                        </a>
+                </div>
+                <div class="box">
+                    <i class="fas fa-print"></i>
+                    <a href="./addGrade.html"> <span class="nav-item"> Add Grade</span></a>
+                </div>
+              </div>
+              <div class="boxs2">
+                <div class="boxbox">
+                    <div>Your Feedback</div>
+                   <textarea placeholder=" type here" id="feedback" ></textarea>
+                </div>
+                <div class="box">
+                    <div>Accedemic calendar</div>
+                   <table border="1">
+                      <tr><td>seprmeber 20</td><td>Class begin</td></tr>
+                      <tr><td>november 18</td><td>parent teacher meeting</td></tr>
+                      <tr><td>november 20</td><td> first mid exam</td></tr>
+                      <tr><td>desember 20</td><td> class end</td></tr>
+                      <tr><td>january 16</td><td> Final exam</td></tr>
+                   </table>
+                 </div>
+              </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>

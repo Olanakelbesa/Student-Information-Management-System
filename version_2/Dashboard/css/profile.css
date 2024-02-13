@@ -1,0 +1,203 @@
+*{
+    margin:0px;
+    padding:0px;
+
+}
+.all_container{
+    display:flex;
+    background:whitesmoke;
+    gap:20px;
+}
+
+/* main part*/
+.main_container{
+    width:80%;
+}
+.main_container .top{
+    font-size: 20px;
+    width:100%;
+    margin:20px 0px 0px 10px;
+    height:5vh;
+    display:flex;
+    gap:60%;
+}
+.main_container .top i{
+      padding: 10px;
+    border-radius: 50%;
+    background:gray;
+}
+/*blog part*/
+.main .boxs1{
+    margin:20px 0px 0px 10px;
+    display:flex;
+    gap:2%;
+}
+.boxs1 .box{
+    width:25%;
+    padding:40px 20px;
+    height:35vh;
+    background: white;
+    border-radius: 8%;
+
+}
+.boxs1 .box img{
+    margin:10px 20% 10px;
+    width:70%;
+    height:27vh;
+    border-radius: 10%;
+    
+}
+.boxs1 .box p{
+   margin: 10 20% 0px;
+   text-decoration: none;
+   text-align: center;
+   font-size: 16px;
+}
+.boxs1 .box1{
+    padding:40px 20px;
+    width:60%;
+    height:35vh;
+    background: white;
+    border-radius: 8%;
+
+}
+.boxs1 .box1 div{
+    margin-top:20px 0px 0px 20px;
+    padding:10px;
+    font-size: 20px;
+}
+
+.box1 table{
+    margin:10px 0px 0px 20px;
+    width:90%;
+    height:20vh;
+    outline:none;
+    border: none;
+    border-radius: 5%;
+}
+.box1 tr{
+    height:2vh;
+}
+tr:nth-child(odd){
+    background-color:whitesmoke;
+}
+.boxs2 {
+    margin:40px 0px 0px 10px;
+    padding:20px 40px 40px;
+    width:90%;
+    height:20vh;
+    background: white;
+}
+.boxs2 div{
+    margin-top:20px 0px 0px 20px;
+    padding:10px;
+    font-size: 20px;
+}
+@media only screen and (max-width: 800px){
+    .all_container{
+        gap:6px;
+    }
+    .main_container .top{
+        font-size: 16px;
+        margin:10px 0px 10px 10px;
+        height:2vh;
+        gap:55%;
+    }
+    .main_container .top i{
+        font-size: 8px;
+        border-radius: 50%;
+        background:gray;
+}
+.boxs1 .box{
+    width:25%;
+    padding:20px 10px;
+    height:35vh;
+    background: white;
+}
+.boxs1 .box img{
+    margin:0;
+    width:100%;
+}
+.boxs1 .box p{
+   margin: 10 20% 0px;
+   font-size: 14px;
+}
+.boxs2 {
+    margin:40px 0px 0px 10px;
+    padding:10px 20px 20px;
+    width:90%;
+    height:20vh;
+    background: white;
+}
+.boxs2 .detail{
+    height:10vh;
+    display: flex;
+    overflow: scroll;
+    margin-top:20px 0px 0px 20px;
+    padding:10px;
+    font-size: 20px;
+}
+}
+@media only screen and (max-width: 532px){
+    .main_container .top{
+        font-size: 16px;
+        margin:10px 0px 15px 0px;
+        height:2vh;
+        gap:45%;
+    }
+    .main .boxs1{
+        margin:20px 0px 0px;
+        flex-direction: column;
+        gap:2%;
+    }
+
+    .boxs1 .box{
+        width:72%;
+        padding:20px 10px;
+        height:25vh;   
+    }
+    .boxs1 .box img{
+        margin:10px 20% 10px;
+        width:70%;
+        height:18vh;
+    }
+    .boxs1 .box p{
+       margin: 10 20% 0px;
+       text-decoration: none;
+       text-align: center;
+       font-size: 14px;
+    }
+    .boxs1 .box1{
+        margin:10px 0px;
+        padding:20px 10px;
+        width:90%;
+        height:25vh;
+        background: white;
+        border-radius: 8%;
+    
+    }
+    .boxs1 .box1 div{
+        padding:10px;
+        font-size: 20px;
+    }
+    
+    .box1 table{
+        margin:10px 0px 0px 20px;
+        width:90%;
+        height:20vh;
+        outline:none;
+        border: none;
+        border-radius: 5%;
+    }
+    .box1 tr{
+        height:2vh;
+    }
+    .boxs2 {
+        margin:10px 0px 0px 5px;
+        padding:5px 10px 10px;
+        width:90%;
+        height:20vh;
+        background: white;
+    }
+
+}
